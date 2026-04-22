@@ -10,19 +10,25 @@
   <body>
     <header>
       <div class="search-controls">
-        <!-- New: show selector -->
-        <label for="show-select">Choose a show:</label>
-        <select id="show-select">
-          <option value="">-- Loading shows --</option>
-        </select>
+        <!-- Search works for BOTH shows and episodes -->
+        <input 
+          type="text" 
+          id="search-input" 
+          placeholder="Search shows or episodes..." 
+        />
 
-        <input type="text" id="search-input" placeholder="Search episodes..." />
-
+        <!-- Episode filter (hidden in shows view) -->
         <select id="episode-select">
           <option value="">All Episodes</option>
         </select>
 
+        <!-- Counter -->
         <span id="episode-count"></span>
+
+        <!-- REQUIRED for Level 500 -->
+        <button id="back-btn" style="display: none;">
+          Back to Shows
+        </button>
       </div>
     </header>
 
@@ -31,7 +37,9 @@
     <footer>
       <p>
         Data provided by
-        <a href="https://www.tvmaze.com/" target="_blank">TVMaze.com</a>
+        <a href="https://www.tvmaze.com/" target="_blank">
+          TVMaze.com
+        </a>
       </p>
     </footer>
 
