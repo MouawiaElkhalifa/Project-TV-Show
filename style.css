@@ -1,17 +1,17 @@
 #root {
-  display: flex;       /* Put cards side-by-side */
-  flex-wrap: wrap;     /* Move to next row if screen is full */
-  gap: 20px;           /* Space between cards */
-  justify-content: center; 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
 .episode-card {
   border: 1px solid #ddd;
-  width: 300px;        
+  width: 300px;
   padding: 10px;
 }
 
 .episode-card img {
-  width: 100%;         
+  width: 100%;
   height: auto;
 }

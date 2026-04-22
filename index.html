@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,21 +10,29 @@
   <body>
     <header>
       <div class="search-controls">
+        <!-- New: show selector -->
+        <label for="show-select">Choose a show:</label>
+        <select id="show-select">
+          <option value="">-- Loading shows --</option>
+        </select>
+
         <input type="text" id="search-input" placeholder="Search episodes..." />
-        
+
         <select id="episode-select">
           <option value="">All Episodes</option>
         </select>
-        
+
         <span id="episode-count"></span>
       </div>
     </header>
 
-    <main id="root">
-      </main>
+    <main id="root"></main>
 
     <footer>
-      <p>Data provided by <a href="https://www.tvmaze.com/" target="_blank">TVMaze.com</a></p>
+      <p>
+        Data provided by
+        <a href="https://www.tvmaze.com/" target="_blank">TVMaze.com</a>
+      </p>
     </footer>
 
     <script src="script.js"></script>
